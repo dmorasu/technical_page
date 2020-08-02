@@ -23,8 +23,8 @@
                 <li><a href="#comandos">Comandos SQL</a></li>
                 <li><a href="#ejemplos">Ejemplos</a></li>
                 <li><a href="#sentencias">Sentencias</a></li>
-                <li><a href="#consultas">Consultas</a></li>
-                <li><a href="vistas">Vistas</a></li>
+                <li><a href="#Consultas" >Consultas</a></li>
+                <li><a href="#vistas">Vistas</a></li>
 
                 
             </ul>
@@ -109,11 +109,61 @@
                  <h2>Sentencias</h2> 
                  <h5>Definicion</h5>
                     <p>Un lenguaje de manipulación de datos (Data Manipulation Language, o DML en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo de datos adecuado. El lenguaje de manipulación de datos más popular hoy día es SQL, usado para recuperar y manipular datos en una base de datos relacional.</p>
+                    <table>
+                        <th>Comandos</th>
+                        <tr>
+                            <td>Select</td>
+                            <td>Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado</td>
+                        </tr>
+                        <tr>
+                            <td>Insert</td>
+                            <td>Utilizado para consultar registros de la base de datos que satisfagan un criterio determinado</td>
+                        </tr>
+                        <tr>
+                            <td>Update</td>
+                            <td>Utilizado para modificar los valores de los campos y registros especificados Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos.</td>
+                        </tr>
+                        <tr>
+                            <td>Delete</td>
+                            <td>Utilizado para eliminar registros de una tabla</td>
+                        </tr>
+                    </table>
+
 
                 </section>
-                <section></section>
+
+                <section id="Consultas">
+                    <h2>Consultas de Selecion</h>
+                    <code>
+                        # SELECT Campos FROM Tabla;
+                        # SELECT Nombre, Telefono FROM Clientes;
+                    </code>
+                    <h5>Consultas de Predicado</h5>
+                    <code>
+                        # SELECT ALL FROM Empleados;
+                        # SELECT * FROM Empleados;
+                    </code>
+                    <h5>Criterios de Seleccion</h5>
+                    <code>
+                        # SELECT * FROM Empleados WHERE Edad > 25 AND Edad < 50;
+                        # SELECT * FROM Empleados WHERE (Edad > 25 AND Edad < 50) OR Sueldo = 100;
+                        # SELECT * FROM Empleados WHERE NOT Estado = 'Soltero';
+                        # SELECT * FROM Empleados WHERE (Sueldo > 100 AND Sueldo < 500) OR (Provincia = 'Madrid' AND Estado = 'Casado');
+                    </code>
+                </section>
+
+                <section id="vistas">
+                    <h2>Vistas</h2>
+                    <p>Las vistas (“views”) en SQL son un mecanismo que permite generar un resultado a partir de una consulta (query) almacenado, y ejecutar nuevas consultas sobre este resultado como si fuera una tabla normal. Las vistas tienen la misma estructura que una tabla: filas y columnas. La única diferencia es que sólo se almacena de ellas la definición, no los datos.</p>
+                    <p>La cláusula CREATE VIEW permite la creación de vistas. La cláusula asigna un nombre a la vista y permite especificar la consulta que la define. Su sintaxis es:</p>
+                    <code>
+                        # CREATE VIEW id_vista [(columna,…)]AS especificación_consulta;
+                    </code>
+                </section>
             </section>
+            <footer> Hecho por Diego Alejandro Mora | Medellin-Antioquia| 2020</footer>
         </main>
+       
        
     
 </body>
