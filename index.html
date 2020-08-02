@@ -13,18 +13,18 @@
 <body>
     
         
-        <nav id="navegacion" class="menu"> 
+        <nav id="navegacion" > 
             <header><h1>Documentacion SQL</h1></header>
             <small>Directorio Tecnico</small>
             <ul >
                 <li>
-                    <a>Conceptos basicos</a>
+                    <a href="#introduccion">Introduccion</a>
                 </li> 
-                <li><a>Introduccion</a></li>
-                <li><a>Comandos SQL</a></li>
-                <li><a>Prácticas</a></li>
-                <li><a>Consultas</a></li>
-                <li><a>Vistas</a></li>
+                <li><a href="#comandos">Comandos SQL</a></li>
+                <li><a href="#ejemplos">Ejemplos</a></li>
+                <li><a href="#sentencias">Sentencias</a></li>
+                <li><a href="#consultas">Consultas</a></li>
+                <li><a href="vistas">Vistas</a></li>
 
                 
             </ul>
@@ -32,16 +32,87 @@
         <main id="main-doc">
             <section class="main-section">
 
-            </section>
-            <section>
+                </section>
+                <section id="introduccion">
                 <h2><strong>Conceptos Basicos</strong></h2>
                 <p>SQL (Structured Query Language) o en español Lenguaje Estructurado de Consulta es el lenguaje utilizado para definir, controlar y acceder a los datos almacenados en una base de datos relacional.</p>
-            </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
+           
+            
+                <h2><strong>Introducción</strong></h2>
+                <p>El lenguaje de consulta estructurado o SQL (por sus siglas en inglés Structured Query Language) es un lenguaje declarativo de acceso a bases de datos relacionales que permite especificar diversos tipos de operaciones en ellas. Una de sus características es el manejo del álgebra y el cálculo relacional que permiten efectuar consultas con el fin de recuperar de forma sencilla información de interés de bases de datos, así como hacer cambios en ella.</p>
+                <p>El SQL es un lenguaje de acceso a bases de datos que explota la flexibilidad y potencia de los sistemas relacionales y permite así gran variedad de operaciones.</p> <br>
+                <h4>Componentes del SQL</h4>
+                <p>El lenguaje SQL está compuesto por comandos, cláusulas, operadores y funciones de agregado. Estos elementos se combinan en las instrucciones para crear, actualizar y manipular las bases de datos.</p>
 
+                </section>
+                <section id="comandos">
+                <h2>Comandos</h2>
+                <h5>Existen dos tipos de comandos:</h5>
+                <p>Los DLL(Data Definition Language) que permiten crear y definir nuevas bases de datos, campos e índices. Los DML(Data Manipulation Language) que permiten generar consultas para ordenar, filtrar y extraer datos de la base de datos. Los DCL(Data Control Language) que se encargan de definir las permisos sobre los datos</p>
+                <h4>Lenguaje de definición de datos (DDL)</h4> <br>
+                <table>
+                    <th>Comando</th>
+                    <tr>
+                        <td>Create:</td>
+                        <td>Utilizado para crear nuevas tablas, campos e índices</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Drop:</td>
+                        <td>Empleado para eliminar tablas e índices</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Alter:</td>
+                        <td>Utilizado para modificar las tablas agregando campos o cambiando la definición de los campos</td>
+                    </tr>
+
+                </table>
+                </section>
+
+                <section id="ejemplos">
+
+                <p>El lenguaje de definición de datos (en inglés Data Definition Language, o DDL), es el que se encarga de la modificación de la estructura de los objetos de la base de datos. Incluye órdenes para modificar, borrar o definir las tablas en las que se almacenan los datos de la base de datos. Existen cuatro operaciones básicas: CREATE, ALTER, DROP y TRUNCATE.</p>
+                <h5>Ejemplo Create</h5>
+                <code># CREATE TABLE Empleado
+                    (
+                    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                    Nombre VARCHAR(50),
+                    Apellido VARCHAR(50),
+                    Direccion VARCHAR(255),
+                    Ciudad VARCHAR(60),
+                    Telefono VARCHAR(15),
+                    Peso VARCHAR (5),
+                    Edad (2),
+                    Actividad Específica (100),
+                    idCargo INT
+                    )
+                </code>
+
+                <h5>Ejemplo Drop</h5>
+                <code>
+                    # DROP TABLE 'NOMBRE_TABLA';
+                    # DROP SCHEMA 'ESQUEMA;'
+                    # DROP DATABASE 'BASEDATOS';
+                </code>
+
+                <h5>Ejemplo ALTER</h5>
+                <code>
+                    # ALTER TABLE 'NOMBRE_TABLA' ADD NUEVO_CAMPO INT;
+                    # ALTER TABLE 'NOMBRE_TABLA' DROP COLUMN NOMBRE_COLUMNA;
+                </code>
+
+
+
+                </section>
+                <section id="sentencias">
+                 <h2>Sentencias</h2> 
+                 <h5>Definicion</h5>
+                    <p>Un lenguaje de manipulación de datos (Data Manipulation Language, o DML en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo de datos adecuado. El lenguaje de manipulación de datos más popular hoy día es SQL, usado para recuperar y manipular datos en una base de datos relacional.</p>
+
+                </section>
+                <section></section>
+            </section>
         </main>
        
     

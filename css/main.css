@@ -1,34 +1,34 @@
 body{
     font-family: 'Abel', sans-serif;
 }
-.menu{
+#navegacion{
     
     position: fixed;
-    min-width: 200px;
+    min-width: 290px;
     top: 0px;
     left: 0px;
-    width: 290px;
+    width: 300px;
     height: 100%;
     border-right: solid;
     border-color: #0f1324;
     background: #0c0a20;
 
 }
-.menu ul{
+#navegacion ul{
     height: 88%;
     padding: 0;
-    overflow-y: 300px;
+    overflow-y: auto;
     overflow-x: hidden;
 
 }
-.menu a{
+#navegacion a{
     display: block;
-    padding: 20px 20px;
+    padding: 10px 30px;
     color: #f5f7f5;
     text-decoration: none;
     cursor: pointer;
 }
-.menu li {
+#navegacion li {
     color: #19e768;
     border-top: 5px solid;
     list-style: none;
@@ -39,6 +39,7 @@ body{
 header{
     text-align: center;
     font-size: x-large;
+    
     font-family: 'Merriweather', serif;
     color: white;
 }
@@ -50,7 +51,35 @@ small{
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
-  }
+}
+
+
+code {
+    display: block;
+    text-align: left;
+    white-space: inherit;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1;
+    background-color: #6e7486;
+    padding: 15px;
+    color: #ffffff;
+    margin: 120px;
+    border-radius: 5px;
+}
+
+
+footer {
+    
+        position: fixed;
+        bottom: 12px;
+        right: 10px;
+        font-size: small;
+    
+    
+}
+
 @media only screen and (max-width: 815px) {
     /* For mobile phones: */
     #navegacion ul {
